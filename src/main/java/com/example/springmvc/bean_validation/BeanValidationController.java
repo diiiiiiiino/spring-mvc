@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/validation/api")
-public class ValidationController {
+public class BeanValidationController {
 
     @PostMapping("/add")
     public Object addItem(@RequestBody @Validated Item item, BindingResult bindingResult){
